@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchDriverException, NoSuchElementException
 # NoSuchElementException`: это исключение возникает, когда WebDriver не может найти элемент на веб-странице.
-# NoSuchDriverException`: это исключение возникает, когда WebDriver не может найти указанный драйвер, то есть если обновится драйвер
+# NoSuchDriverException`: это исключение возникает, когда WebDriver не может найти указанный драйвер. Тестов может быть огромное количество 100 или 1000, если эту строчку не прописать то при обновлении драйвера - тест выдаст ошибку и прекратит дальнейшее выполнение тестов, а с этой строчкеой не прекратит и продолжит
 def test_site_visit():
     driver = webdriver.Chrome()
     driver.get("https://www.saucedemo.com/")
