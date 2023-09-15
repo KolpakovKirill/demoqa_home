@@ -9,8 +9,3 @@ def browser():
     driver.quit()
 
 
-#@pytest.fixture(scope="session")     # Декоратор говорит что эта функция является фикстурой
-#def browser():
-    ###driver.quit()
-###driver.quit()
-###driver.quit()
