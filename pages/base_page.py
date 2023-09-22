@@ -11,7 +11,7 @@ class BasePage:
         time.sleep(1)
         return self.driver.get(self.base_url)
 
-    def find_element(self, locator):
+    def find_element(self, locator): #нужно ли тут добавить атрибут self.locator = locator?
         return self.driver.find_element(By.CSS_SELECTOR, locator)
 
 
